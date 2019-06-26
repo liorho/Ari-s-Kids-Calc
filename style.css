@@ -1,3 +1,14 @@
+:root {
+    /* --backgroundColor_num: rgb(97, 97, 235); */
+    --bgColor_numImg: none;
+
+    --bgColor_container:  blanchedalmond;
+
+    --bgColor_numNum:  blanchedalmond;
+
+    --bgColor_operator: blanchedalmond;
+}
+
 body{
     margin: 0;
 }
@@ -13,114 +24,91 @@ body{
     border: 1vh solid rgb(161, 16, 16); 
     height: 93.5vh;
     grid-gap: 0.5vw;
-    background-color: blanchedalmond;
+    background-color: var(--bgColor_container);
     padding: 1vw;
 }
 
-
 #num1_img{
     grid-area: a;
-    /* background-color: rgb(97, 97, 235); */
 }
-
-
 
 #num2_img{
     grid-area: x;
-    /* background-color: rgb(97, 97, 235); */
 }
-
 
 #num1_img, #num2_img{
     display: inline-block;
-    /* background-color: rgb(243, 65, 52); */
-    /* margin: auto; */
-    color: rgb(67, 14, 151)
+    background-color: var(--bgColor_numImg);
+    height: 50vh;
 }
-
-
 
 #num1_num{
     grid-area: b;
-    background-color: blanchedalmond;
 }
 
 #num2_num{
     grid-area: y;
-    background-color: blanchedalmond;
-}
-
-#operator{
-    grid-area: o;
-    background-color: blanchedalmond;
-    margin-right: 5vw;
-    margin-left: 5vw;    
-}
-
-#num1_num, #num2_num, #operator{
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 5vw;
-    font-weight: bold;
-    justify-content: center;
-    align-items : center;
 }
 
 #num1_num, #num2_num{
     margin-right: 12vw;
     margin-left: 12vw;
+    background-color: var(--bgColor_numNum);
 }
 
-
-
-
-
-#result_img{
-    grid-area: i;
-    background-color: purple;
+#operator{
+    grid-area: o;
+    background-color: var(--bgColor_operator);
+    margin-right: 5vw;
+    margin-left: 5vw;  
 }
 
-#result{
-    display: grid;
-    grid-area: r;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:  
-    "i s";
-    height: 10vh;
+#num1_num, #num2_num, #operator{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6vw;
+    font-weight: bold;
+    justify-content: center;
+    align-items : center;
 }
+
 
 input{
-    text-align: center;
+    display: grid;
+    grid-area: i;
+    font-size: 3vw;
+    background-color: pink;
     color: black;
-    border:0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size:6.5vw;
+    font-weight: bold;
     padding:0;
+    border:0;
+    margin: 0;
+    width: 22vw;
+    
 }
+
 ::placeholder{
     color: rgb(92, 91, 91);
     font-family: 'Gloria Hallelujah', cursive;
     font-size:2.5vw;
+    padding:0;
+    border:0;
+    margin: 0;
 }
 
+/* Unable blue annoying border line when entering input */
 input:focus {
     outline:none !important;
 }
 
+/* Unable little annoying arrows when entering input */
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
-
-#result_user{
-    display: grid;
-    grid-area: i;
-    font-family: 'Montserrat', sans-serif;
-    background-color: pink;
-    font-size: 2vw;
-    margin: auto;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
+    -webkit-appearance: none; 
+    margin: 0; 
 }
 
 #solve_btn{
