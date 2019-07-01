@@ -126,5 +126,5 @@ displayOperator(operator);
 
 setCursor();
 
-// Able ENTER key to apply result
+// Enable ENTER key to apply result
 pressKey(checkUserResult, "container");

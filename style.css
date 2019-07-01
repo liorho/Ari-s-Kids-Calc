@@ -4,9 +4,11 @@
 
     --bgColor_container:  blanchedalmond;
 
-    --bgColor_numNum:  blanchedalmond;
+    --bgColor_numNum: none;
 
-    --bgColor_operator: blanchedalmond;
+    --bgColor_operator: none;
+
+    --bgResult_btn: pink;
 }
 
 body{
@@ -76,7 +78,7 @@ input{
     display: grid;
     grid-area: i;
     font-size: 3vw;
-    background-color: pink;
+    background-color: var(--bgResult_btn);
     color: black;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
