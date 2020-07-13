@@ -1,3 +1,3 @@
 # Ari-s-Kids-Calc 
 
-bbb
+Ari-s-Kids-Calc is a small educational kids app for math. 
